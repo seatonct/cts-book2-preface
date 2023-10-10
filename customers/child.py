@@ -9,7 +9,7 @@ class Child():
         self.max_age = 12
         self.sex = sex
 
-    def target(self):
+    def target_customer(self):
         """identifies target population of customers"""
         print(
             f'This item is marketed to {self.sex} customers between the ages of {self.min_age} and {self.max_age}.')
