@@ -1,12 +1,10 @@
 """base class for a tank top"""
+from .base_top import BaseTop
 
 
-class TankTop():
+class TankTop(BaseTop):
     """initializes tank top class"""
 
-    def __init__(self, colors, pattern, graphics, graphics_location):
+    def __init__(self, sleeve_length, colors, pattern):
         self.shirt_type = "tank top"
-        self.colors = colors
-        self.pattern = pattern
-        self.graphics = graphics
-        self.graphics_location = graphics_location
+        BaseTop.__init__(self, sleeve_length, colors, pattern)

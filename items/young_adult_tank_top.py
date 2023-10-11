@@ -3,14 +3,16 @@
 from tops import TankTop
 from customers import YoungAdult
 from seasons import Hot
+from decorations import Graphics
 
 
-class YoungAdultTankTop(TankTop, YoungAdult, Hot):
+class YoungAdultTankTop(TankTop, YoungAdult, Hot, Graphics):
     """initializes instance of young adult tank top"""
 
-    def __init__(self, name, colors, pattern, graphics, graphics_location, sex):
+    def __init__(self, name, sleeve_length, colors, pattern, graphics, graphics_location, sex):
         self.name = name
-        TankTop.__init__(self, colors, pattern, graphics, graphics_location)
+        TankTop.__init__(self, sleeve_length, colors, pattern)
+        Graphics.__init__(self, graphics, graphics_location)
         YoungAdult.__init__(self, sex)
         Hot.__init__(self)
 
