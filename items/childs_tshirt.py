@@ -2,11 +2,11 @@
 
 from tops import Tshirt
 from customers import Child
-from seasons import Hot
 from decorations import Graphics
+from seasons import Hot
 
 
-class ChildsTshirt(Tshirt, Child, Hot, Graphics):
+class ChildsTshirt(Tshirt, Child, Graphics, Hot):
     """Class for t-shirt in the children's section."""
 
     def __init__(self, name, colors, pattern, sleeve_length, graphics, graphics_location, sex):
