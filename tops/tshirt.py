@@ -1,9 +1,10 @@
 """base class for a t-shirt"""
+from .base_top import BaseTop
 
 
-class Tshirt():
+class Tshirt(BaseTop):
     """initializes t-shirt class"""
 
-    def __init__(self, sleeve_length):
+    def __init__(self, sleeve_length, colors, pattern):
         self.shirt_type = "t-shirt"
-        self.sleeve_length = sleeve_length
+        BaseTop.__init__(self, sleeve_length, colors, pattern)

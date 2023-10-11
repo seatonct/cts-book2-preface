@@ -1,12 +1,12 @@
 """base class for coats"""
 from seasons import Cold
+from decorations import ColorsAndPatterns
 
 
-class Coat(Cold):
+class Coat(Cold, ColorsAndPatterns):
     """initializes an instance of the jacket class"""
 
-    def __init__(self, pattern, color):
+    def __init__(self, colors, pattern):
         self.outerwear_type = "coat"
-        self.pattern = pattern
-        self.color = color
-        super().__init__()
+        Cold.__init__(self)
+        ColorsAndPatterns.__init__(self, colors, pattern)
