@@ -5,8 +5,8 @@ class Man():
     # Compositional class for items in the men's section of the store.
 
     def __init__(self):
-        self.min_age = 21
         self.sex = "male"
+        self.min_age = 21
 
     def target(self):
         """identifies target population of customers"""
