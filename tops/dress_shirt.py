@@ -6,5 +6,4 @@ class DressShirt(BaseTop):
     """initializes dress shirt class"""
 
     def __init__(self, sleeve_length, colors, pattern):
-        self.shirt_type = "dress shirt"
-        BaseTop.__init__(self, sleeve_length, colors, pattern)
+        super().__init__("dress shirt", sleeve_length, colors, pattern)
