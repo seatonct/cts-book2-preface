@@ -4,8 +4,8 @@
 class Season:
     """initializes a season"""
 
-    def __init__(self):
-        self.weather: "all"
+    def __init__(self, weather):
+        self.weather = weather
 
     def target_season(self):
         """identifies type of weather for which the item is marketed"""

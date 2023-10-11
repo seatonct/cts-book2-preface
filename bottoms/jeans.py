@@ -1,9 +1,11 @@
 """base class for jeans"""
 
+from .base_bottom import BaseBottoms
 
-class Jeans():
+
+class Jeans(BaseBottoms):
     """initializes jeans instance"""
 
-    def __init__(self, wash, style):
+    def __init__(self, style, colors, pattern, wash):
+        super().__init__("jeans", style, colors, pattern)
         self.wash = wash
-        self.style = style

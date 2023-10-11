@@ -2,7 +2,7 @@
 
 
 class Man():
-    # Compositional class for items in the men's section of the store.
+    """Compositional class for items in the men's section of the store."""
 
     def __init__(self):
         self.sex = "male"

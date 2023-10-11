@@ -2,7 +2,7 @@
 
 
 class Woman():
-    # Compositional class for items in the women's section of the store.
+    """Compositional class for items in the women's section of the store."""
 
     def __init__(self):
         self.min_age = 21

@@ -1,10 +1,10 @@
 """base class for casual dresses"""
+from .base_dress import BaseDress
 
 
-class CasualDress():
-    def __init__(self, pattern, colors, length, sleeve_style):
+class CasualDress(BaseDress):
+    """initializes instance of a casual dress"""
+
+    def __init__(self, colors, pattern, length, sleeve_style):
         self.dress_type = "casual dress"
-        self.pattern = pattern
-        self.colors = colors
-        self.length = length
-        self.sleeve_style = sleeve_style
+        super().__init__(colors, pattern, length, sleeve_style)
