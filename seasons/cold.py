@@ -7,5 +7,4 @@ class Cold(Season):
     """initialize cold season"""
 
     def __init__(self):
-        super().__init__()
-        self.weather = "cold"
+        super().__init__("cold")

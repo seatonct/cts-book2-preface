@@ -2,7 +2,7 @@
 
 
 class Child():
-    # Compositional class for items in the children's section of the store.
+    """Compositional class for items in the children's section of the store."""
 
     def __init__(self, sex):
         self.min_age = 2

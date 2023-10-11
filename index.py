@@ -8,8 +8,7 @@ mens_peacoat = MensCoat("Men's Peacoat", "black", "solid")
 womens_flower_casual_dress = WomensCasualDress(
     "Women's Flower Dress", "flower-patterned", "purple", "knee-length", "short-sleeve")
 
-# print(boys_logo_t.target())
-# print(boys_logo_t)
-# print(young_womens_tree_tanktop)
+print(boys_logo_t)
+print(young_womens_tree_tanktop)
 print(mens_peacoat)
-# print(womens_flower_casual_dress)
+print(womens_flower_casual_dress)

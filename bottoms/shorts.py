@@ -1,9 +1,10 @@
 """base class for shorts"""
 
+from .base_bottom import BaseBottoms
 
-class Shorts():
+
+class Shorts(BaseBottoms):
     """initializes shorts instance"""
 
-    def __init__(self, pattern, color):
-        self.pattern = pattern
-        self.color = color
+    def __init__(self, style, colors, pattern):
+        super().__init__("shorts", style, colors, pattern)

@@ -2,7 +2,7 @@
 
 
 class YoungAdult():
-    # Compositional class for items in the young adult section of the store.
+    """Compositional class for items in the young adult section of the store."""
 
     def __init__(self, sex):
         self.min_age = 13
